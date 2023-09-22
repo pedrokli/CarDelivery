@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.iconsHeader {
+    margin-right: 20px;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sidebar{
+    width: 20%;
+    background-color: white;
+    height: 100%;
+}
+
+.content{
+    width: 80%;
+    background-color: rgb(245, 245, 245, 245);
+}
