@@ -15,11 +15,94 @@
   </head>
   <body>
     
-    <header> 
-
-
-
-    </header>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+              <img class = "navbar-brand logo" src="./assets/images/logo-Easy-Carros.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- Gostaria de entender o motivo do form só ficar a direita quando coloco essa ul -->
+                  </ul>
+                  <div>
+                      <i class="fa-solid fa-bell iconsHeader"></i>
+                      <i class="fa-solid fa-inbox iconsHeader"></i>
+                      <i class="fa-solid fa-user-large iconsHeader"></i>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- Precisa alinhar a logo do header com a nav bar -->
+  
+  <!-- Side Bar -->
+  <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light">
+              <div class="position-sticky">
+                  <ul class="navbar-nav my-4">
+                      <li>
+                          <div class="text-muted small fw-bold px-3">
+                              DASHBOARD
+                          </div>
+                      </li>
+  
+                      <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
+  
+                      <li>
+                          <div class="text-muted small fw-bold px-3 mb-3">
+                              FINANCEIRO
+                          </div>
+                      </li>
+  
+                      <li>
+                          <a
+                              class="nav-link px-3"
+                              data-bs-toggle="collapse"
+                              href="#layouts"
+                          >
+                              <span span class="me-2"><i class="bi bi-layout-split"></i></span>
+                              <span>Receitas</span>
+                              <span class="ms-auto">
+                                  <span class="right-icon">
+                                      <i class="bi bi-chevron-down"></i>
+                                  </span>
+                              </span>
+                          </a>
+                      </li>
+      
+                      <li>
+                          <a href="#" class="nav-link px-3">
+                          <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                          <span>Despesas</span>
+                          </a>
+                      </li>
+  
+                      <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
+  
+                      <li>
+                          <div class="text-muted small fw-bold px-3 mb-3">
+                          DESEMPENHO
+                          </div>
+                      </li>
+  
+                      <li>
+                          <a href="#" class="nav-link px-3">
+                          <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                          <span>Frota</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="./assets/pages/acompanhamento.html" class="nav-link px-3">
+                          <span class="me-2"><i class="bi bi-table"></i></span>
+                          <span>Acompanhe o veículo</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
     
     <section class="main">
       
