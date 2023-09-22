@@ -1,125 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Chamada Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--Chamada Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-  <!-- Link para CSS  -->
-  <link rel="stylesheet" href="assets/css/style.css">
+<!-- Link para CSS  -->
+<link rel="stylesheet" href="assets/css/styles.css">
 
-  <title>Projeto BRQ</title>
+<title>Projeto BRQ</title>
+
 </head>
-
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img class="navbar-brand logo" src="./assets/images/logo-Easy-Carros.png" alt="">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- Gostaria de entender o motivo do form só ficar a direita quando coloco essa ul -->
-          </ul>
-          <div>
-            <i class="fa-solid fa-bell iconsHeader"></i>
-            <i class="fa-solid fa-inbox iconsHeader"></i>
-            <i class="fa-solid fa-user-large iconsHeader"></i>
+          <img class = "navbar-brand logo" src="/assets/images/logo-Easy-Carros.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Gostaria de entender o motivo do form só ficar a direita quando coloco essa ul -->
+              </ul>
+              <div>
+                  <i class="fa-solid fa-bell iconsHeader"></i>
+                  <i class="fa-solid fa-inbox iconsHeader"></i>
+                  <i class="fa-solid fa-user-large iconsHeader"></i>
+              </div>
           </div>
-        </div>
       </div>
-    </nav>
-  </header>
-  <!-- Precisa alinhar a logo do header com a nav bar -->
+  </nav>
+</header>
+<!-- Precisa alinhar a logo do header com a nav bar -->
 
-  <!-- Side Bar -->
-  <div class="container-fluid">
+<!-- Side Bar -->
+<div class="container-fluid">
     <div class="row">
-      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light">
-        <div class="position-sticky">
-          <ul class="navbar-nav my-4">
-            <li>
-              <div class="text-muted small fw-bold px-3">
-                DASHBOARD
-              </div>
-            </li>
+        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light">
+            <div class="position-sticky">
+                <ul class="navbar-nav my-4">
+                    <li>
+                        <div class="text-muted small fw-bold px-3">
+                            DASHBOARD
+                        </div>
+                    </li>
 
-            <li class="my-4">
-              <hr class="dropdown-divider bg-light" />
-            </li>
+                    <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
 
-            <li>
-              <div class="text-muted small fw-bold px-3 mb-3">
-                FINANCEIRO
-              </div>
-            </li>
+                    <li>
+                        <div class="text-muted small fw-bold px-3 mb-3">
+                            FINANCEIRO
+                        </div>
+                    </li>
 
-            <li>
-              <a class="nav-link px-3" data-bs-toggle="collapse" href="#layouts">
-                <span span class="me-2"><i class="bi bi-layout-split"></i></span>
-                <span>Receitas</span>
-                <span class="ms-auto">
-                  <span class="right-icon">
-                    <i class="bi bi-chevron-down"></i>
-                  </span>
-                </span>
-              </a>
-            </li>
+                    <li>
+                        <a
+                            class="nav-link px-3"
+                            data-bs-toggle="collapse"
+                            href="#layouts"
+                        >
+                            <span span class="me-2"><i class="bi bi-layout-split"></i></span>
+                            <span>Receitas</span>
+                            <span class="ms-auto">
+                                <span class="right-icon">
+                                    <i class="bi bi-chevron-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                        <span class="me-2"><i class="bi bi-book-fill"></i></span>
+                        <span>Despesas</span>
+                        </a>
+                    </li>
 
-            <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Despesas</span>
-              </a>
-            </li>
+                    <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
 
-            <li class="my-3">
-              <hr class="dropdown-divider bg-light" />
-            </li>
+                    <li>
+                        <div class="text-muted small fw-bold px-3 mb-3">
+                        DESEMPENHO
+                        </div>
+                    </li>
 
-            <li>
-              <div class="text-muted small fw-bold px-3 mb-3">
-                DESEMPENHO
-              </div>
-            </li>
+                    <li>
+                        <a href="#" class="nav-link px-3">
+                        <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                        <span>Frota</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#a" class="nav-link px-3">
+                        <span class="me-2"><i class="bi bi-table"></i></span>
+                        <span>Acompanhe o veículo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
 
-            <li>
-              <a href="#" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-graph-up"></i></span>
-                <span>Frota</span>
-              </a>
-            </li>
-            <li>
-              <a href="./assets/pages/acompanhamento.html" class="nav-link px-3">
-                <span class="me-2"><i class="bi bi-table"></i></span>
-                <span>Acompanhe o veículo</span>
-              </a>
-            </li>
-          </ul>
+
+    <!-- Conteúdo do Dashboard -->
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Localização</div>
+                    <div class="card-body">
+                      <div class="content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29257.226393764682!2d-46.59999938897834!3d-23.562937100161438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695340845083!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Painel 2</div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Painel 3</div>
+                    <div class="card-body">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
+    </div>
 
 
+<!-- Chamada JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-      <div class="content">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29257.226393764682!2d-46.59999938897834!3d-23.562937100161438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695340845083!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+<!-- Chamada Font Awesome -->
+<script src="https://kit.fontawesome.com/c83b3f5184.js" crossorigin="anonymous"></script>
 
-      <!-- Chamada JavaScript -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
