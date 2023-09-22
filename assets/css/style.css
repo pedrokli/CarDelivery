@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sidebar{
+    width: 20%;
+    background-color: white;
+    height: 100%;
+}
+
+.content{
+    width: 80%;
+    background-color: rgb(245, 245, 245, 245);
+}
