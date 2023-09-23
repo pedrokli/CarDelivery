@@ -4,17 +4,21 @@
     box-sizing: border-box;
 }
 
+html, body {height: 100%;}
+
 .main{
     display: flex;
     flex-wrap: wrap;
     height: 100%;
 }
 
+@media (min-width: 768px)
 .sidebar{
-    width: 20%;
+    width: 14rem!important;
     background-color: white;
     height: 100%;
 }
+
 
 .content{
     width: 80%;
