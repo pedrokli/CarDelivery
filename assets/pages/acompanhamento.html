@@ -1,145 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+    <meta charset="UTF-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chamado CSS BootStrap -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamado Ícones BootStrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+    
+    <!-- Chamado nosso CSS personalizado -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 
-<!--Chamada Bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-<!-- Link para CSS  -->
-<link rel="stylesheet" href="assets/css/styles.css">
-
-<title>Projeto BRQ</title>
+    <title>Projeto BRQ</title>
 
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <img class = "navbar-brand logo" src="/assets/images/logo-Easy-Carros.png" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Gostaria de entender o motivo do form só ficar a direita quando coloco essa ul -->
-              </ul>
-              <div>
-                  <i class="fa-solid fa-bell iconsHeader"></i>
-                  <i class="fa-solid fa-inbox iconsHeader"></i>
-                  <i class="fa-solid fa-user-large iconsHeader"></i>
-              </div>
-          </div>
-      </div>
-  </nav>
-</header>
-<!-- Precisa alinhar a logo do header com a nav bar -->
-
-<!-- Side Bar -->
-<div class="container-fluid">
-    <div class="row">
-        <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light">
-            <div class="position-sticky">
-                <ul class="navbar-nav my-4">
-                    <li>
-                        <div class="text-muted small fw-bold px-3">
-                            DASHBOARD
-                        </div>
-                    </li>
-
-                    <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
-
-                    <li>
-                        <div class="text-muted small fw-bold px-3 mb-3">
-                            FINANCEIRO
-                        </div>
-                    </li>
-
-                    <li>
-                        <a
-                            class="nav-link px-3"
-                            data-bs-toggle="collapse"
-                            href="#layouts"
-                        >
-                            <span span class="me-2"><i class="bi bi-layout-split"></i></span>
-                            <span>Receitas</span>
-                            <span class="ms-auto">
-                                <span class="right-icon">
-                                    <i class="bi bi-chevron-down"></i>
-                                </span>
-                            </span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#" class="nav-link px-3">
-                        <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                        <span>Despesas</span>
-                        </a>
-                    </li>
-
-                    <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
-
-                    <li>
-                        <div class="text-muted small fw-bold px-3 mb-3">
-                        DESEMPENHO
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#" class="nav-link px-3">
-                        <span class="me-2"><i class="bi bi-graph-up"></i></span>
-                        <span>Frota</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#a" class="nav-link px-3">
-                        <span class="me-2"><i class="bi bi-table"></i></span>
-                        <span>Acompanhe o veículo</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-
-
-    <!-- Conteúdo do Dashboard -->
-    <div class="container mt-4">
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">Localização</div>
-                    <div class="card-body">
-                      <div class="content">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29257.226393764682!2d-46.59999938897834!3d-23.562937100161438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1695340845083!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                      </div>
-                    </div>
-                </div>
-            </div>
+    <header>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebar"
+              aria-controls="offcanvasExample"
+            >
+              <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
+            </button>
+            <!-- Navbar buga se deixar a logo grande, talvez seja melhor só escrever mesmo -->
+            <img class = "navbar-brand me-auto ms-lg-0 ms-3 logo" src="../images/logo-Easy-Carros.png" alt="">
             
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">Painel 2</div>
-                    <div class="card-body">
-                        
-                    </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#topNavBar"
+              aria-controls="topNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topNavBar">
+              <form class="d-flex ms-auto my-3 my-lg-0">
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="Pesquisar"
+                    placeholder="Pesquisar"
+                    aria-label="Pesquisar"
+                  />
+                  <button class="btn btn-primary" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
                 </div>
+              </form>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle ms-2"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-fill"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Seu perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Desconectar</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">Painel 3</div>
-                    <div class="card-body">
-                        
-                    </div>
-                </div>
-            </div>
+          </div>
+        </nav>
+      </header> <!-- Header -->
+    
+        <!-- Side Bar -->
+        <div
+          class="offcanvas offcanvas-start sidebar-nav bg-light"
+          tabindex="-1"
+          id="sidebar"
+        >
+          <div class="offcanvas-body p-0">
+            <nav class="navbar-light">
+              <ul class="navbar-nav">
+                <li>
+                  <div class="text-muted small fw-bold px-3 my-3">
+                    PAINEL DE CONTROLE
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3 active">
+                    <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="my-3"><hr class="dropdown-divider bg-light" /></li>
+                <li>
+                  <div class="text-muted small fw-bold px-3 mb-3">
+                    FINANCEIRO
+                  </div>
+                </li>
+                <li>
+                  <a
+                    class="nav-link px-3 sidebar-link"
+                    data-bs-toggle="collapse"
+                    href="#layouts"
+                  >
+                    <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                    <span>Multas</span>
+                    <span class="ms-auto">
+                      <span class="right-icon">
+                        <i class="bi bi-chevron-down"></i>
+                      </span>
+                    </span>
+                  </a>
+                  <div class="collapse" id="layouts">
+                    <ul class="navbar-nav ps-3">
+                      <li>
+                        <a href="#" class="nav-link px-3">
+                          <span class="me-2"
+                            ><i class="bi bi-arrow-return-right"></i></span>
+                          <span>Multas recebidas</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link px-3">
+                          <span class="me-2"
+                            ><i class="bi bi-arrow-return-right"></i></span>
+                          <span>Indicar condutor</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-piggy-bank" viewBox="0 0 16 16">
+                      <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
+                      <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
+                    </svg></span>
+                    <span>Receitas</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-piggy-bank" viewBox="0 0 16 16">
+                      <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
+                      <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
+                    </svg></span>
+                    <span>Despesas</span>
+                  </a>
+                </li>
+    
+                <li class="my-2"><hr class="dropdown-divider bg-light" /></li>
+                
+                <li>
+                  <div class="text-muted small fw-bold px-3 mb-3">
+                    DESEMPENHO
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                      <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                    </svg></span>
+                    <span>Frota</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-table"></i></span>
+                    <span>Acompanhe seu veículo</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-3">
+                    <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                    <span>Índice de desvalorização</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-    </div>
+        <!-- Side Bar -->
+        
+        <!-- Corpo da Dashboard -->
+        <main class="mt-5 pt-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Acompanhe seu veículo</h4>
+              </div>
+            </div>
+    
+            <!-- Cards --> 
+            
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <div class="card bg-primary text-white h-100"> <!--Escolher as cores-->
+                  <div class="card-body py-5">xxxxxxxxxxxxx</div> 
+                  <div class="card-footer d-flex">
+                    Mais detalhes
+                    <span class="ms-auto">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-3 mb-3">
+                <div class="card bg-warning text-dark h-100">
+                  <div class="card-body py-5">xxxxxxxxxxxxx</div>
+                  <div class="card-footer d-flex">
+                    Mais detalhes
+                    <span class="ms-auto">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-3 mb-3">
+                <div class="card bg-success text-white h-100">
+                  <div class="card-body py-5">xxxxxxxxxxxxx</div>
+                  <div class="card-footer d-flex">
+                    Mais detalhes
+                    <span class="ms-auto">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-3 mb-3">
+                <div class="card bg-danger text-white h-100">
+                  <div class="card-body py-5">xxxxxxxxxxxxx</div>
+                  <div class="card-footer d-flex">
+                    Mais detalhes
+                    <span class="ms-auto">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cards -->
+    
+            <!-- Gráficos -->
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card h-100">
+                  <div class="card-header">
+                    <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
+                    Mapa
+                  </div>
+                  <div class="card-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d58510.61545468614!2d-46.59532161661586!3d-23.571551181389395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps!5e0!3m2!1spt-BR!2sbr!4v1695682397500!5m2!1spt-BR!2sbr" width="40%" height="60%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <canvas class="chart" width="40%" height="60%"></canvas>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Gráficos -->
 
 
 <!-- Chamada JavaScript -->
