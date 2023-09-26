@@ -48,3 +48,25 @@ body, button {
     top: var(--topNavbarHeight);
   }
 }
+
+html, body {height: 100%;}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+@media (min-width: 768px){}
+
+.sidebar {
+    width: 14rem;
+    background-color: white;
+    height: 100%;
+}
+
+
+.content{
+    width: 80%;
+    background-color: rgb(245, 245, 245, 245);
+}

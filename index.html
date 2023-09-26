@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!-- Chamado CSS BootStrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
@@ -179,7 +180,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
+              <a href="./assets/pages/acompanhamento.html" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-table"></i></span>
                 <span>Acompanhe seu veículo</span>
               </a>
@@ -264,10 +265,10 @@
             <div class="card h-100">
               <div class="card-header">
                 <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Gráfico 1
+                Balanço Financeiro
               </div>
               <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
+                <canvas id="grafico-1" width="400" height="200"></canvas>
               </div>
             </div>
           </div>
@@ -275,10 +276,10 @@
             <div class="card h-100">
               <div class="card-header">
                 <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
-                Gráfico 2
+                Balanço de Deliverys
               </div>
               <div class="card-body">
-                <canvas class="chart" width="400" height="200"></canvas>
+                <canvas id="grafico-2" width="400" height="200"></canvas>
               </div>
             </div>
           </div>
@@ -406,7 +407,14 @@
         <!-- Corpo da Dashboard -->
       </div>
     </main>
+
   <!-- Chamada JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <!-- Chamada dos gráficos -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+  
+  <!-- Chamado JavaScript do gráfico personalizado -->
+  <script src="/assets/js/graficos.js"></script>
   </body>
 </html>
