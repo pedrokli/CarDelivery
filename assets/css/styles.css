@@ -70,10 +70,14 @@ html, body {height: 100%;}
     background-color: rgb(245, 245, 245, 245);
 }
 
-tr:hover{
+tbody tr:hover{
   background: #AFEEEE;
 }
 
 a:hover{
   background-color: #AFEEEE;
+}
+
+tr {
+  align-items: center;
 }
