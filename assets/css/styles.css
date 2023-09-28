@@ -65,9 +65,31 @@ html, body {height: 100%;}
   }
 }
 
+
 .content{
     width: 80%;
     background-color: rgb(245, 245, 245, 245);
+}
+
+.borda-botao {
+  border: 1px solid black;
+}
+
+.table th, .table td {
+  text-align: center; 
+  vertical-align: middle; 
+}
+
+tbody tr:hover{
+  background: #AFEEEE;
+}
+
+a:hover{
+  background-color: #AFEEEE;
+}
+
+tr {
+  align-items: center;
 }
 
 tbody tr:hover{
