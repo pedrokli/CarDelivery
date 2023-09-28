@@ -14,7 +14,7 @@
     <!-- Chamado nosso CSS personalizado -->
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <title>Multas Recebidas</title>
+    <title>Indicar Condutor</title>
 
 </head>
 <body>
@@ -183,7 +183,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="nav-link px-3">
+                  <a href="./infoVeiculo.html" class="nav-link px-3">
                     <span class="me-2"><i class="bi bi-graph-up"></i></span>
                     <span>Índice de desvalorização</span>
                   </a>
@@ -199,218 +199,77 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
-                <h4>Multas Recebidas</h4>
+                <h4>Indicação de Condutor-Infrator</h4>
               </div>
             </div>
-
-            <!-- Tabela de Informação da frota -->
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <div class="card">
-              <div class="card-header">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-exclamation-triangle" viewBox="0 1 16 16">
-                  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
-                  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
-                </svg></span> Suas Multas
+            
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <div class="card h-100">
+                <div class="card-header">
+                  <span class="me-2">
+                    <i class="bi bi-arrow-left-right">
+                    </i>
+                  </span>
+                  Gerador de Documento de Indicação
                 </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table
-                    id="example"
-                    class="table table-striped data-table"
-                    style="width: 100%"
-                  >
-                    <thead>
-                      <tr>
-                        <th>Vencimento</th>
-                        <th>Condutor</th>
-                        <th>Veículo</th>
-                        <th>Placa</th>
-                        <th>Renavam</th>
-                        <th>Valor</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
-                          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
-                        </svg></td>
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
-                          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                        </svg></td>
-
-                      </tr>
-                      <tr>
-                        <td>xx/xx/xxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>xxxxx</td>
-                        <td>R$xx.xx</td>
-                        <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-check-lg" viewBox="0 0 16 16">
-                          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
-                        </svg></td>
-
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <tr>
-                          <th>Vencimento</th>
-                          <th>Condutor</th>
-                          <th>Veículo</th>
-                          <th>Placa</th>
-                          <th>Renavam</th>
-                          <th>Valor</th>
-                          <th>Status</th>
-                          </tr>
-                    </tfoot>
-                  </table>
+                <div class="card-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col mb-3">
+                        <label for="inputName4">Condutor-Infrator</label>
+                        <input type="text" class="form-control" id="inputName4" placeholder="Nome Completo">
+                      </div>
+                      <div class="form-group col mb-3">
+                        <label for="inputName4">Nome Social</label>
+                        <input type="text" class="form-control" id="inputName5" placeholder="(opcional)">
+                      </div>
+                      <div class="form-group col-md-10 mb-3">
+                        <label for="inputAddress">Data de Vencimento</label>
+                        <input type="date" class="form-control" id="inputDate">
+                      </div>
+                      <div class="form-grou col-md-10 mb-3">
+                        <label for="inputAddress2">RENAVAM</label>
+                        <input type="number" class="form-control" id="inputRenavam2" placeholder="00.000.0.000.00">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-4 mb-3">
+                          <label for="inputCity">Valor</label>
+                          <input type="number" class="form-control" id="inputValor" placeholder="R$ 00.00">
+                        </div>
+                      </div>
+                      <a href="https://www.detran.sp.gov.br/wps/wcm/connect/e031a672-109e-4417-8597-d49d65b4817e/Indicação%2Bde%2Bcondutor%2Bv2.pdf?MOD=AJPERES&CVID=oCh-Ft4" target="_blank" class="btn btn-personalizado">Baixar Formulário</a>
+                      <button type="" class="btn btn-secondary">Limpar</button>
+                    </div>
+                  </form>
+                  
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col-md-5 mb-3">
-            <div class="card h-100">
-            <div class="card-header">
-              <span class="me-2"><i class="bi bi-upload"></i></i></span>
-              Cadastrar multa nova
-            </div>
-            <div class="card-body">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-10">
-                    <label for="inputName4">Condutor</label>
-                    <input type="text" class="form-control" id="inputName4" placeholder="Nome Completo">
-                  </div>
-                  <div class="form-group col-md-10">
-                    <label for="inputNumber4">CNH</label>
-                    <input type="number" class="form-control" id="inputNumber4" placeholder="000.000.000.00/00">
-                  </div>
+              <!--Saiba Mais-->
+              <div class="card card-saiba-mais text-white mb-3 col-md-5" style="width: 28rem;">
+                <div class="card-body">
+                  <h5 class="card-title">O que é preciso?</h5>
+                  <ul class="card-body">
+                    <li>Documento de identificação pessoal do representante da pessoa jurídica responsável pela solicitação do serviço na unidade de atendimento</li>
+                    <li>Contrato Social ou documento equivalente de criação da pessoa jurídica</li>
+                    <li>Comprovação de poderes para representação legal da pessoa jurídica - original ou cópia simples, conforme o documento apresentado</li>
+                    <li>Carteira Nacional de Habilitação (CNH) do condutor infrator</li>
+                    <li>Formulário de Identificação de condutor Infrator - original, preenchido e assinado</li>
+                  </ul>
+                  <a href="https://www.detran.sp.gov.br/wps/portal/portaldetran/cidadao/infracoes/fichaservico/indicacaoCondutorVeiculo" target="_blank" class="btn btn-light">Saiba Mais</a>
+                  
                 </div>
-                <div class="form-group col-md-10">
-                  <label for="inputAddress">Data de Vencimento</label>
-                  <input type="date" class="form-control" id="inputDate">
-                </div>
-                <div class="form-grou col-md-10">
-                  <label for="inputAddress2">RENAVAM</label>
-                  <input type="number" class="form-control" id="inputRenavam2" placeholder="00.000.0.000.00">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label for="inputCity">Valor</label>
-                    <input type="number" class="form-control" id="inputValor" placeholder="R$ 00.00">
-                  </div>
-                </div>
-                <p></p>
-                <button type="submit" value="Submit" class="btn btn-primary">Cadastrar</button>
-                <button type="" class="btn btn-secondary">Limpar</button>
-              </form>
-              
-            </div>
-          </div>
-        </div>
-        <img src="../images/imagem-multas.jpg" class="rounded img-fluid col-md-7 row mb-3" alt="imagem com contabilidade em mesa de escritório">
+              </div>
+              <!--Fim Saiba Mais-->
+
+              <!--Formulário-->
+
         </div>
         <!--Fim corpo da página-->
       </div>
-        </main>
+      </main>
 
 
 <!-- Chamada JavaScript -->
